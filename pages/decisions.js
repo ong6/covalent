@@ -58,14 +58,14 @@ export default function Home() {
 							team, post videos to all platforms at once and be able to
 							customize their postings to suit each platform. I then decided to
 							focus on the Analytics, Reports and Videos user flows to be made
-							into an interactive prototype.
+							into an interactive prototype. While the rest of the sections
+							where left as a static mockup
 						</div>
 						<div className="mt-2">
-							While the rest of the sections could just be a static mockup, and
-							although I am not going to fully explore some of these sections
-							(due to time constraints), I wanted to show the user how the
-							different sections of the app work together to create a cohesive
-							experience.
+							Although I am not going to fully explore some of these sections as
+							they are out of scope, I wanted fully build the framework of the
+							app to show users how the different sections work together to
+							create a cohesive user experience.
 						</div>
 						<div className="mt-2">
 							I choose to make use of
@@ -160,11 +160,11 @@ export default function Home() {
 				<Section delay={0.7}>
 					<div className="text-lg mt-6">
 						<div className="text-lg mt-2">
-							The key difference between the reports page and hte analytics page
+							The key difference between the report page and the analytics page
 							is that they represent the different types of data. While the
-							analytics page is for representing the Video data, the analytics
-							page is more for Business data. This will allow users to see how
-							their videos are doing in more of a business perspective.
+							analytics page is for representing the video data, the report page
+							is more for business data. This enables users to see how their
+							videos are doing from a business perspective.
 						</div>
 						<div className="text-lg mt-2">
 							As with the analytics page, the charts are drawn with the charts
