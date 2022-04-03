@@ -8,6 +8,20 @@ import { BsFillCaretRightFill, BsFillCaretLeftFill } from "react-icons/bs";
 import Link from "next/dist/client/link";
 
 export default function Home() {
+	const ListLink = ({ weblink, data }) => {
+		return (
+			<li>
+				<a
+					href={weblink}
+					target="_blank"
+					className="text-blue-500"
+					rel="noreferrer">
+					{data}
+				</a>
+			</li>
+		);
+	};
+
 	return (
 		<div className={styles.container}>
 			<Head>
@@ -19,7 +33,7 @@ export default function Home() {
 			<div className="">
 				<Section delay={0.1}>
 					<div className="text-lg mt-6">
-						<div className="text-2xl">Interactive Demo</div>
+						<div className="text-2xl font-medium">Interactive Demo</div>
 						<iframe
 							className="my-4 border-2 border-blue-300 rounded-lg w-full"
 							height="600"
@@ -29,7 +43,7 @@ export default function Home() {
 				</Section>
 				<Section delay={0.3}>
 					<div className="text-lg mt-6">
-						<div className="text-2xl">Template Showcase</div>
+						<div className="text-2xl font-medium">Template Showcase</div>
 						<iframe
 							className="my-4 border-2 border-blue-300 rounded-lg w-full"
 							height="600"
@@ -39,13 +53,51 @@ export default function Home() {
 				</Section>
 				<Section delay={0.5}>
 					<div className="text-lg mt-6">
-						<div className="text-2xl mb-4">Poster</div>
-						<Image
-							src={poster}
-							alt="covalent"
-							placeholder="blur"
-							className="rounded-lg border-2 border-blue-300"
-						/>
+						<div className="text-2xl font-medium">Conclusion</div>
+						<div className="text-lg mt-2">
+							The links to the completed prototype and the template files are
+							below.
+						</div>
+						<div className="text-xl font-medium mt-2">Important Links</div>
+						<ol className="text-lg list-decimal list-inside py-4">
+							<ListLink
+								data="Template file"
+								weblink="https://www.figma.com/file/brRhvhN3In9jbjXjRXK1GO/Jun-Xiong-Prototype?node-id=22%3A1116"
+							/>
+							<ListLink
+								data="Prototype file"
+								weblink="https://www.figma.com/proto/brRhvhN3In9jbjXjRXK1GO/Jun-Xiong-Prototype?page-id=0%3A1&node-id=8%3A170&viewport=337%2C48%2C0.5&scaling=scale-down&starting-point-node-id=8%3A170"
+							/>
+						</ol>
+						<div className="text-xl font-medium mt-2">Summary & Takeaways</div>
+						<div className="text-lg mt-2">
+							Overall I learnt a lot of things from this design project and has
+							helped me to improve my UI/UX skills. Some of the key takeaways
+							are below:
+						</div>
+						<ol className="text-lg list-disc list-inside py-4">
+							<li className="li">
+								Figma Skills - How to use overlays to make interactive
+								prototypes more robust
+							</li>
+							<li className="li">
+								Figma Skills - How to use components and variants effectively to
+								make a wide range of adaptable interfaces
+							</li>
+							<li className="li">
+								Design Skills - How to properly balance color, style and design
+							</li>
+							<li className="li">
+								Design Skills - How to layout a dashboard to reduce cognitive
+								load
+							</li>
+							<li className="li">
+								Design Skills - User requirements and Prototype building
+							</li>
+							<li className="li">
+								Design Skills - Application of design principles
+							</li>
+						</ol>
 					</div>
 				</Section>
 				<Section delay={0.7}>

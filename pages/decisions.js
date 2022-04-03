@@ -145,7 +145,7 @@ export default function Home() {
 							I felt that this would make the charts and graphs less cluttered
 							and give the user a feeling for spaciousness. I also split the
 							layout of the page vertically giving 70% space to the graphs and
-							30% space to the other information. THat way, the user will easily
+							30% space to the other information. That way, the user will easily
 							be able to focus on the important information.
 						</div>
 					</div>
@@ -168,7 +168,10 @@ export default function Home() {
 							platforms, this allows the user to have a high level overview of
 							how their videos are performing. Most of the charts in this page
 							are drawn with the charts library in Figma, with some cosmetics
-							improvements by myself.
+							improvements by myself. The page was designed with an offset of
+							graphs to reduce cognitive load. The graphs are also sized based
+							on the importance and helps to present the data in a more formal
+							manner.
 						</div>
 						<div className="text-lg mt-2">
 							All the chart data such as views, view growth and watch time are
@@ -203,9 +206,10 @@ export default function Home() {
 							As with the analytics page, the charts are drawn with the charts
 							library and represent real data that can be gotten from each
 							platform. I also decided to split out some of the data such as
-							growth, profits, time viewed and subscriber rates. I did this to
-							help categorize the data so users won&apos;t feel too overwhelmed
-							by the amount of data.
+							growth, profits, time viewed and subscriber rates where users can
+							switch between the tabs to view different data. I did this to help
+							categorize the data so users won&apos;t feel too overwhelmed by
+							the amount of data.
 						</div>
 					</div>
 				</Section>
