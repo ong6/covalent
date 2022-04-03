@@ -1,15 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
 import Section from "../components/Sections";
-import Pie from "../components/Pie";
-import styles from "../styles/Home.module.css";
-import Streak from "../components/Streak";
-import { Progress } from "@chakra-ui/react";
-import { AiFillCar } from "react-icons/ai";
-import { BiFoodMenu } from "react-icons/bi";
+import persona from "../public/persona.png";
 import wireframe_01 from "../public/wireframe_01.png";
 import wireframe_02 from "../public/wireframe_02.png";
-import persona from "../public/persona.png";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
 	return (

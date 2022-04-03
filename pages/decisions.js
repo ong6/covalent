@@ -1,16 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
 import Section from "../components/Sections";
-import Pie from "../components/Pie";
-import styles from "../styles/Home.module.css";
-import Streak from "../components/Streak";
-import { Progress } from "@chakra-ui/react";
-import { AiFillCar } from "react-icons/ai";
-import { BiFoodMenu } from "react-icons/bi";
-import report_example from "../public/report_example.png";
-import dashboard_example from "../public/dashboard_example.png";
 import analytics_example from "../public/analytics_example.png";
+import dashboard_example from "../public/dashboard_example.png";
+import report_example from "../public/report_example.png";
 import video_example from "../public/video_example.png";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
 	return (
@@ -196,7 +191,9 @@ export default function Home() {
 							to help manage their past videos, post new videos and view their
 							current videos. The page shows which platforms users have posted
 							to, the number of views each video got, the name and description
-							of the videos in a list format.
+							of the videos in a list format. The list format was choose to
+							allow of displaying of more details than a card format while being
+							easier to sort through the date, views and other field.
 						</div>
 						<div className="text-lg mt-2">
 							Users can also view individual videos analytics from this page by

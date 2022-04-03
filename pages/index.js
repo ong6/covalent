@@ -1,13 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import Section from "../components/Sections";
-import Pie from "../components/Pie";
-import styles from "../styles/Home.module.css";
-import Streak from "../components/Streak";
-import { Progress } from "@chakra-ui/react";
-import { AiFillCar } from "react-icons/ai";
-import { BiFoodMenu } from "react-icons/bi";
 import poster from "../public/covalent_banner.png";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
 	return (
