@@ -2,15 +2,18 @@ import Head from "next/head";
 import Image from "next/image";
 import Section from "../components/Sections";
 import persona from "../public/persona.png";
-import wireframe_01 from "../public/wireframe_01.png";
-import wireframe_02 from "../public/wireframe_02.png";
 import styles from "../styles/Home.module.css";
 import poster from "../public/covalent_banner.png";
 import report_example from "../public/report_example.png";
 import dashboard_example from "../public/dashboard_example.png";
 import analytics_example from "../public/analytics_example.png";
 import video_example from "../public/video_example.png";
-
+import teams_example from "../public/teams_example.png";
+import message_example from "../public/message_example.png";
+import template_example from "../public/template_example.png";
+import { Button } from "@chakra-ui/react";
+import { BsFillCaretRightFill, BsFillCaretLeftFill } from "react-icons/bs";
+import Link from "next/dist/client/link";
 export default function Home() {
 	const ListLink = ({ weblink }) => {
 		return (
@@ -54,7 +57,7 @@ export default function Home() {
 						/>
 					</div>
 				</Section>
-				<Section delay={0.2}>
+				<Section delay={0.3}>
 					<div className="flex flex-col justify-center py-4 text-xl">
 						<div className="text-xl font-medium">Persona Design</div>
 						<Image
@@ -65,7 +68,7 @@ export default function Home() {
 						/>
 					</div>
 				</Section>
-				<Section delay={0.2}>
+				<Section delay={0.4}>
 					<div className="flex flex-col justify-center py-4 text-xl">
 						<div className="text-xl font-medium">Dashboard Design</div>
 						<Image
@@ -76,7 +79,7 @@ export default function Home() {
 						/>
 					</div>
 				</Section>
-				<Section delay={0.2}>
+				<Section delay={0.4}>
 					<div className="flex flex-col justify-center py-4 text-xl">
 						<div className="text-xl font-medium">Analytics Design</div>
 						<Image
@@ -87,7 +90,7 @@ export default function Home() {
 						/>
 					</div>
 				</Section>
-				<Section delay={0.2}>
+				<Section delay={0.4}>
 					<div className="flex flex-col justify-center py-4 text-xl">
 						<div className="text-xl font-medium">Report Design</div>
 						<Image
@@ -98,11 +101,44 @@ export default function Home() {
 						/>
 					</div>
 				</Section>
-				<Section delay={0.2}>
+				<Section delay={0.4}>
 					<div className="flex flex-col justify-center py-4 text-xl">
 						<div className="text-xl font-medium">Video Design</div>
 						<Image
 							src={video_example}
+							alt="covalent"
+							placeholder="blur"
+							className="rounded-lg"
+						/>
+					</div>
+				</Section>
+				<Section delay={0.4}>
+					<div className="flex flex-col justify-center py-4 text-xl">
+						<div className="text-xl font-medium">Message Design</div>
+						<Image
+							src={message_example}
+							alt="covalent"
+							placeholder="blur"
+							className="rounded-lg"
+						/>
+					</div>
+				</Section>
+				<Section delay={0.4}>
+					<div className="flex flex-col justify-center py-4 text-xl">
+						<div className="text-xl font-medium">Template Design</div>
+						<Image
+							src={template_example}
+							alt="covalent"
+							placeholder="blur"
+							className="rounded-lg"
+						/>
+					</div>
+				</Section>
+				<Section delay={0.4}>
+					<div className="flex flex-col justify-center py-4 text-xl">
+						<div className="text-xl font-medium">Team Design</div>
+						<Image
+							src={teams_example}
 							alt="covalent"
 							placeholder="blur"
 							className="rounded-lg"
@@ -121,6 +157,16 @@ export default function Home() {
 							<ListLink weblink="https://www.figma.com/community/file/952435706130034963" />
 							<ListLink weblink="https://www.figma.com/community/file/1088418504991825797" />
 						</ol>
+					</div>
+				</Section>
+				<Section delay={0.7}>
+					<div className="flex items-center justify-between">
+						<Link href="/demo">
+							<Button colorScheme="twitter" leftIcon={<BsFillCaretLeftFill />}>
+								To Figma Showcase
+							</Button>
+						</Link>
+						<div className=""></div>
 					</div>
 				</Section>
 			</div>

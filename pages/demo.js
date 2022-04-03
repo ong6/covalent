@@ -3,6 +3,9 @@ import Image from "next/image";
 import Section from "../components/Sections";
 import poster from "../public/covalent_banner.png";
 import styles from "../styles/Home.module.css";
+import { Button } from "@chakra-ui/react";
+import { BsFillCaretRightFill, BsFillCaretLeftFill } from "react-icons/bs";
+import Link from "next/dist/client/link";
 
 export default function Home() {
 	return (
@@ -43,6 +46,22 @@ export default function Home() {
 							placeholder="blur"
 							className="rounded-lg border-2 border-blue-300"
 						/>
+					</div>
+				</Section>
+				<Section delay={0.7}>
+					<div className="flex items-center justify-between">
+						<Link href="/decisions">
+							<Button colorScheme="twitter" leftIcon={<BsFillCaretLeftFill />}>
+								To Design Decisions
+							</Button>
+						</Link>
+						<Link href="/gallery">
+							<Button
+								colorScheme="twitter"
+								rightIcon={<BsFillCaretRightFill />}>
+								To Gallery
+							</Button>
+						</Link>
 					</div>
 				</Section>
 			</div>

@@ -74,7 +74,7 @@ const Navbar = (props) => {
 						Design Process
 					</LinkItem>
 					<LinkItem href="/decisions" path={path}>
-						Design decisions
+						Design Decisions
 					</LinkItem>
 					<LinkItem href="/demo" path={path}>
 						Figma Showcase
@@ -98,11 +98,17 @@ const Navbar = (props) => {
 								<NextLink href="/" passHref>
 									<MenuItem as={Link}>Home</MenuItem>
 								</NextLink>
-								<NextLink href="#chainsaver" passHref>
+								<NextLink href="/process" passHref>
+									<MenuItem as={Link}>Design Process</MenuItem>
+								</NextLink>
+								<NextLink href="/decisions" passHref>
+									<MenuItem as={Link}>Design Decisions</MenuItem>
+								</NextLink>
+								<NextLink href="/demo" passHref>
 									<MenuItem as={Link}>Figma Showcase</MenuItem>
 								</NextLink>
-								<NextLink href="#sample" passHref>
-									<MenuItem as={Link}>sample</MenuItem>
+								<NextLink href="/gallery" passHref>
+									<MenuItem as={Link}>Gallery</MenuItem>
 								</NextLink>
 							</MenuList>
 						</Menu>

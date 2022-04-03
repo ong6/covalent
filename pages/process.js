@@ -1,5 +1,8 @@
+import { Button } from "@chakra-ui/react";
+import Link from "next/dist/client/link";
 import Head from "next/head";
 import Image from "next/image";
+import { BsFillCaretRightFill, BsFillCaretLeftFill } from "react-icons/bs";
 import Section from "../components/Sections";
 import persona from "../public/persona.png";
 import wireframe_01 from "../public/wireframe_01.png";
@@ -40,7 +43,7 @@ export default function Home() {
 						/>
 					</div>
 				</Section>
-				<Section delay={0.1}>
+				<Section delay={0.2}>
 					<div className="text-lg mt-6">
 						<div className="text-lg mt-2">
 							Then based on this user group and the persona, I came up with the
@@ -73,7 +76,7 @@ export default function Home() {
 						</div>
 					</div>
 				</Section>
-				<Section delay={0.2}>
+				<Section delay={0.3}>
 					<div className="flex justify-center py-4 text-xl">
 						<Image
 							src={wireframe_01}
@@ -93,7 +96,7 @@ export default function Home() {
 						/>
 					</div>
 				</Section>
-				<Section delay={0.4}>
+				<Section delay={0.5}>
 					<div className="text-lg mt-4">
 						<div className="text-lg mt-2">
 							Some of the design decisions I faced when working on the
@@ -121,6 +124,22 @@ export default function Home() {
 							Once the Low-Fi mockups where done, I started to design the Hi-Fi
 							version of the web application on Figma.
 						</div>
+					</div>
+				</Section>
+				<Section delay={0.7}>
+					<div className="flex items-center justify-between">
+						<Link href="/">
+							<Button colorScheme="twitter" leftIcon={<BsFillCaretLeftFill />}>
+								To Home
+							</Button>
+						</Link>
+						<Link href="/decisions">
+							<Button
+								colorScheme="twitter"
+								rightIcon={<BsFillCaretRightFill />}>
+								To Design Decisions
+							</Button>
+						</Link>
 					</div>
 				</Section>
 			</div>

@@ -6,6 +6,9 @@ import dashboard_example from "../public/dashboard_example.png";
 import report_example from "../public/report_example.png";
 import video_example from "../public/video_example.png";
 import styles from "../styles/Home.module.css";
+import { Button } from "@chakra-ui/react";
+import { BsFillCaretRightFill, BsFillCaretLeftFill } from "react-icons/bs";
+import Link from "next/dist/client/link";
 
 export default function Home() {
 	return (
@@ -96,7 +99,7 @@ export default function Home() {
 						/>
 					</div>
 				</Section>
-				<Section delay={0.1}>
+				<Section delay={0.3}>
 					<div className="text-lg mt-6">
 						<div className="text-lg mt-2">
 							The dashboard was the first page created and helped me to form the
@@ -114,7 +117,7 @@ export default function Home() {
 						</div>
 					</div>
 				</Section>
-				<Section delay={0.2}>
+				<Section delay={0.4}>
 					<div className="flex flex-col justify-center py-4 text-xl">
 						<div className="text-xl font-medium">Analytics Design</div>
 						<Image
@@ -125,7 +128,7 @@ export default function Home() {
 						/>
 					</div>
 				</Section>
-				<Section delay={0.1}>
+				<Section delay={0.5}>
 					<div className="text-lg mt-6">
 						<div className="text-lg mt-2">
 							The Analytics page is used to measure performance across
@@ -143,7 +146,7 @@ export default function Home() {
 						</div>
 					</div>
 				</Section>
-				<Section delay={0.2}>
+				<Section delay={0.6}>
 					<div className="flex flex-col justify-center py-4 text-xl">
 						<div className="text-xl font-medium">Report Design</div>
 						<Image
@@ -154,7 +157,7 @@ export default function Home() {
 						/>
 					</div>
 				</Section>
-				<Section delay={0.1}>
+				<Section delay={0.7}>
 					<div className="text-lg mt-6">
 						<div className="text-lg mt-2">
 							The key difference between the reports page and hte analytics page
@@ -173,7 +176,7 @@ export default function Home() {
 						</div>
 					</div>
 				</Section>
-				<Section delay={0.2}>
+				<Section delay={0.8}>
 					<div className="flex flex-col justify-center py-4 text-xl">
 						<div className="text-xl font-medium">Video Design</div>
 						<Image
@@ -184,7 +187,7 @@ export default function Home() {
 						/>
 					</div>
 				</Section>
-				<Section delay={0.1}>
+				<Section delay={0.9}>
 					<div className="text-lg mt-6">
 						<div className="text-lg mt-2">
 							Finally, we have the video page. This page can be used by creators
@@ -200,6 +203,22 @@ export default function Home() {
 							clicking the three dots at the action area to open a small pop up
 							menu.
 						</div>
+					</div>
+				</Section>
+				<Section delay={0.7}>
+					<div className="flex items-center justify-between">
+						<Link href="/process">
+							<Button colorScheme="twitter" leftIcon={<BsFillCaretLeftFill />}>
+								To Design Process
+							</Button>
+						</Link>
+						<Link href="/demo">
+							<Button
+								colorScheme="twitter"
+								rightIcon={<BsFillCaretRightFill />}>
+								To Figma Showcase
+							</Button>
+						</Link>
 					</div>
 				</Section>
 			</div>
