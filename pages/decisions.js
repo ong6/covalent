@@ -67,6 +67,7 @@ export default function Home() {
 							app to show users how the different sections work together to
 							create a cohesive user experience.
 						</div>
+						<div className="text-xl font-medium mt-2">External Libraries</div>
 						<div className="mt-2">
 							I choose to make use of
 							<a href="https://mui.com/" className="text-blue-500">
@@ -89,6 +90,36 @@ export default function Home() {
 					</div>
 				</Section>
 				<Section delay={0.2}>
+					<div className="text-lg mt-6">
+						<div className="text-xl font-medium">Design Theories</div>
+						<div className="text-lg mt-2">
+							I decided to go with the main colors being white and blue with
+							other colors being used to make other details pop. I followed
+							design guidelines such as the{" "}
+							<a
+								href="https://www.saralynnbrennan.com/blog/the-60-30-10-design-rule#:~:text=What%20is%20the%2060%2D30,10%25%20should%20be%20an%20accent."
+								className="text-blue-500">
+								60, 30, 10 rule
+							</a>{" "}
+							for coloring and kept my design as clean and minimal as possible.
+						</div>
+						<div className="text-lg mt-2">
+							Before creating each interaction I kept Norman's Action model in
+							mind and asked if the user intentions would match the expected
+							outcome. I also took note of Shneiderman's 8 Golden Rules in which
+							rules, 1 (Strive for consistency), 7 (Keep users in control) and 8
+							(Reduce short-term memory load) where especially important in this
+							app.
+						</div>
+						<div className="text-lg mt-2">
+							Since each page is very information dense, I try to reduce the
+							short term-memory load by restricting the amount of information
+							the user can see at any give time. By compiling the data into one
+							chunk, the user will be able to view everything at one go.
+						</div>
+					</div>
+				</Section>
+				<Section delay={0.2}>
 					<div className="flex flex-col justify-center py-4 text-xl">
 						<div className="text-xl font-medium">Dashboard Design</div>
 						<Image
@@ -103,17 +134,19 @@ export default function Home() {
 					<div className="text-lg mt-6">
 						<div className="text-lg mt-2">
 							The dashboard was the first page created and helped me to form the
-							style that I would stick with for the rest of the pages. I decided
-							to go with the main colors being white and blue with other colors
-							being used to make other details pop. I followed design guidelines
-							such as the 60, 30, 10 rule for coloring and kept my design as
-							clean and minimal as possible.
+							style that I would stick with for the rest of the pages. Initially
+							I experimented with more of a flat looks where all the information
+							was presented linearly instead of splitting it into containers.
+							However, I felt that that design would be too cluttered and may
+							lead to cognitive overload.
 						</div>
 						<div className="text-lg mt-2">
-							I also decided to keep all my items in each page as
-							&quot;containers&quot;. I felt that this would make the charts and
-							graphs less cluttered and give the user a feeling for
-							spaciousness.
+							Hence, I decided to keep all my items in each page as containers.
+							I felt that this would make the charts and graphs less cluttered
+							and give the user a feeling for spaciousness. I also split the
+							layout of the page vertically giving 70% space to the graphs and
+							30% space to the other information. THat way, the user will easily
+							be able to focus on the important information.
 						</div>
 					</div>
 				</Section>
