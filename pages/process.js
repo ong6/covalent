@@ -9,6 +9,7 @@ import { AiFillCar } from "react-icons/ai";
 import { BiFoodMenu } from "react-icons/bi";
 import wireframe_01 from "../public/wireframe_01.png";
 import wireframe_02 from "../public/wireframe_02.png";
+import persona from "../public/persona.png";
 
 export default function Home() {
 	return (
@@ -22,12 +23,33 @@ export default function Home() {
 			<div className="">
 				<Section delay={0.1}>
 					<div className="text-lg mt-6">
-						<div className="text-2xl">Design Process</div>
+						<div className="text-2xl font-medium">Design Process</div>
 						<div className="text-lg mt-2">
 							Before starting the design process, I had to identify who my app
 							was going to be for. I choose my target audience to be creators
-							who focus mainly on video content. Then based on this user group
-							and the design task, I came up with the following user tasks.
+							who focus mainly on video content.
+						</div>
+						<div className="text-lg mt-2">
+							So I designed the following persona to help focus on the
+							experience of that main actor.
+						</div>
+					</div>
+				</Section>
+				<Section delay={0.2}>
+					<div className="flex justify-center py-4 text-xl">
+						<Image
+							src={persona}
+							alt="covalent"
+							placeholder="blur"
+							className="rounded-lg"
+						/>
+					</div>
+				</Section>
+				<Section delay={0.1}>
+					<div className="text-lg mt-6">
+						<div className="text-lg mt-2">
+							Then based on this user group and the persona, I came up with the
+							following user tasks.
 						</div>
 						<ol className="text-lg list-decimal list-inside py-4">
 							<li className="li">
@@ -44,9 +66,9 @@ export default function Home() {
 							</li>
 						</ol>
 						<div className="div">
-							Based on these user tasks, I determined that a web application
-							with a dashboard style would suit this product the best and since
-							most video creators have to interact with websites, it would be a
+							From these user tasks, I determined that a web application with a
+							dashboard style would suit this product the best and since most
+							video creators have to interact with websites, it would be a
 							complementary addition to their workflow.
 						</div>
 						<div className="mt-2">
@@ -101,7 +123,7 @@ export default function Home() {
 							be able to see the data in a more organized way.
 						</div>
 						<div className="mt-2">
-							Once the Low-Fi mockups where done, I started to design the HI-FI
+							Once the Low-Fi mockups where done, I started to design the Hi-Fi
 							version of the web application on Figma.
 						</div>
 					</div>

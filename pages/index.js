@@ -21,7 +21,7 @@ export default function Home() {
 			<div className="">
 				<Section delay={0.1}>
 					<div className="text-lg mt-6">
-						<div className="text-2xl">Introduction</div>
+						<div className="text-2xl font-medium">Introduction</div>
 						<div className="text-lg mt-2">
 							With the growth of social media, more and more creators have
 							picked up video creation as either a hobby or a full-time job. To
