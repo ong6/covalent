@@ -104,12 +104,12 @@ export default function Home() {
 							for coloring and kept my design as clean and minimal as possible.
 						</div>
 						<div className="text-lg mt-2">
-							Before creating each interaction I kept Norman's Action model in
-							mind and asked if the user intentions would match the expected
-							outcome. I also took note of Shneiderman's 8 Golden Rules in which
-							rules, 1 (Strive for consistency), 7 (Keep users in control) and 8
-							(Reduce short-term memory load) where especially important in this
-							app.
+							Before creating each interaction I kept Norman&apos;s Action model
+							in mind and asked if the user intentions would match the expected
+							outcome. I also took note of Shneiderman&apos;s 8 Golden Rules in
+							which rules, 1 (Strive for consistency), 7 (Keep users in control)
+							and 8 (Reduce short-term memory load) where especially important
+							in this app.
 						</div>
 						<div className="text-lg mt-2">
 							Since each page is very information dense, I try to reduce the
