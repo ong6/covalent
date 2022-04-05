@@ -178,7 +178,7 @@ export default function Home() {
 							fields that the youtube, facebook and twitch analytics pages
 							provided. So all these data fields are realistic and accurate in
 							terms of what the user should be expected to see when viewing
-							analytics.
+							analytics. Due to this fact, I also decided that there would be no need to put helping ? buttons on the charts.
 						</div>
 					</div>
 				</Section>
